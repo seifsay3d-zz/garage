@@ -2,9 +2,9 @@
   <div class="container">
     <nav class="nav">
       <div class="nav-left">
-        <a class="nav-item">
+        <router-link class="nav-item" to="/">
           <img src="http://bulma.io/images/bulma-logo.png" alt="Bikes Garage">
-        </a>
+        </router-link>
       </div>
       <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
       <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
