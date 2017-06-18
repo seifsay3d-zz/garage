@@ -1,24 +1,36 @@
 <template>
   <div>
-    <section class="hero">
+    <section class="hero is-large">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">
-            Hero title
-          </h1>
-          <h2 class="subtitle">
-            Hero subtitle
-          </h2>
+          <div class="columns">
+            <div class="column is-10">
+              <input class="input is-medium" placeholder="What are you looking for?" type="text">
+            </div>
+            <div class="column">
+              <button class="button is-primary is-medium">Search</button>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <div class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column">
+            <h4 class="title">Welcome to XX, Start exploring the community</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
     <!-- updates section -->
     <section class="section">
       <div class="container">
         <div class="columns">
           <div class="column is-three-quarters">
             <div class="columns">
-              <h2>Recently Added</h2>
+              <h2 class="title">Recently Added</h2>
             </div>
             <div class="columns">
               <product-thumb></product-thumb>
@@ -29,7 +41,7 @@
           <div class="column">
             <div class="columns">
               <div class="column">
-                <h2> 142 Riders in the garage</h2>
+                <h2 class="title"> 142 Riders in the garage</h2>
               </div>
             </div>
             <div class="columns">
@@ -63,22 +75,22 @@
           <div class="column">
             <div class="columns">
               <div class="column">
-                <h2>Club Wall</h2>
+                <h2 class="title">Club Wall</h2>
               </div>
             </div>
             <div class="columns">
-                <new-comment></new-comment>
+              <new-comment></new-comment>
             </div>
             <div class="columns is-multiline">
-                <g-comment class="is-12"></g-comment>
-                <g-comment class="is-12"></g-comment>
-                <g-comment class="is-12"></g-comment>
+              <g-comment class="is-12"></g-comment>
+              <g-comment class="is-12"></g-comment>
+              <g-comment class="is-12"></g-comment>
             </div>
           </div>
           <div class="column">
             <div class="columns ">
               <div class="column">
-                <h2>Articles</h2>
+                <h2 class="title">Articles</h2>
               </div>
             </div>
             <div class="columns is-multiline">
@@ -99,8 +111,18 @@
   import GComment from '@/Community/Comment';
   import NewComment from '@/Community/NewComment';
   import ArticleThumb from '@/Community/ArticleThumb';
+  import homepage from '@/assets/homepage.png';
 
   export default {
+    data: function data() {
+      return {
+        homepage,
+      };
+    },
+    mounted: function mounted() {
+      const slider = this.$el.querySelector('.hero');
+      slider.style.backgroundImage = `url( ${homepage} )`;
+    },
     components: {
       ProductThumb,
       GComment,
@@ -109,3 +131,8 @@
     },
   };
 </script>
+<style lang="scss">
+  .hero{
+    background-position:center;
+  }
+</style>
