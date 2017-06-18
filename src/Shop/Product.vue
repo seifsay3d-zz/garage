@@ -3,9 +3,23 @@
     <div class="column is-6">
       <div class="columns">
         <div class="column">
-          <div class="image is-2by2">
-            <img src="https://placehold.it/1000x1000">
-          </div>
+          <carousel perPage=1 navigationEnabled="true">
+            <slide>
+              <div class="image is-2by2">
+                <img src="https://placehold.it/1000x1000">
+              </div>
+            </slide>
+            <slide>
+              <div class="image is-2by2">
+                <img src="https://placehold.it/1000x1000">
+              </div>
+            </slide>
+            <slide>
+              <div class="image is-2by2">
+                <img src="https://placehold.it/1000x1000">
+              </div>
+            </slide>
+            </carousel>
         </div>
       </div>
       <div class="columns">
@@ -60,13 +74,15 @@
   import 'vue-awesome/icons/twitter';
   import 'vue-awesome/icons/whatsapp';
   import 'vue-awesome/icons/google-plus';
-  
+  import { Carousel, Slide } from 'vue-carousel';
   import User from '@/Community/User';
 
   export default {
     components: {
       User,
       SocialSharing,
+      Carousel,
+      Slide,
     },
   };
 </script>
