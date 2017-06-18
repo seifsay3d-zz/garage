@@ -1,5 +1,47 @@
 <template>
-  <div>
-    hoo
+  <div class="container">
+    <nav class="nav">
+      <div class="nav-left">
+        <a class="nav-item">
+          <img src="http://bulma.io/images/bulma-logo.png" alt="Bikes Garage">
+        </a>
+      </div>
+      <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+      <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+      <span class="nav-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </span>
+
+      <!-- This "nav-menu" is hidden on mobile -->
+      <!-- Add the modifier "is-active" to display it on mobile -->
+      <div class="nav-right nav-menu">
+        <router-link class="nav-item" to="shop">Shop</router-link>
+        <router-link class="nav-item" to="community">Community</router-link>
+        <router-link class="nav-item" to="directory">Directory</router-link>
+        <router-link class="nav-item" to="stolen-bikes">Stolen Bikes</router-link>
+        <div class="nav-item">
+          <div class="field is-grouped">
+            <p class="control">
+              <a class="button" >
+                <span class="icon">
+                  <i class="fa fa-twitter"></i>
+                </span>
+                <span>Login</span>
+              </a>
+            </p>
+            <p class="control">
+              <a class="button is-primary">
+                <span class="icon">
+                  <i class="fa fa-download"></i>
+                </span>
+                <span>Sign Up</span>
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </nav>
   </div>
 </template>

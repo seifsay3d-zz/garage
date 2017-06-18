@@ -1,15 +1,15 @@
 <template>
   <div id="app">
-    <header></header>
+    <g-header></g-header>
     <page-wrapper></page-wrapper>
-    <footer></footer>
+    <g-footer></g-footer>
   </div>
 </template>
 
 <script>
-import GHeader from './Layout/Header';
-import GFooter from './Layout/Footer';
-import PageWrapper from './Layout/PageWrapper';
+import GHeader from './Header';
+import GFooter from './Footer';
+import PageWrapper from './PageWrapper';
 
 export default {
   name: 'app',
