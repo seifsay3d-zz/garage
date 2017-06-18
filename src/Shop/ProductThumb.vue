@@ -19,6 +19,11 @@
           <small>11:09 PM - 1 Jan 2016</small>
         </div>
       </div>
+      <div class="card-footer">
+        <div class="card-footer-item"><button class="button is-fullwidth">Like</button></div>
+        <div class="card-footer-item"><button class="button is-fullwidth">Share</button></div>
+        <div class="card-footer-item"><button class="button is-fullwidth">Details</button></div>
+      </div>
     </div>
   </div>
 </template>
