@@ -2,8 +2,9 @@
   <div class="column">
     <div class="media">
       <div class="media-left">
+
         <figure class="image is-48x48">
-          <img src="http://bulma.io/images/placeholders/96x96.png" alt="Image">
+          <avatar :username="username"></avatar>
         </figure>
       </div>
       <div class="media-content">
@@ -13,3 +14,17 @@
     </div>
   </div>
 </template>
+<script>
+  import Avatar from 'vue-avatar/dist/Avatar';
+
+  export default {
+    data: function data() {
+      return {
+        username: 'Seif Sayed Abdelmohsen',
+      };
+    },
+    components: {
+      Avatar,
+    },
+  };
+</script>
