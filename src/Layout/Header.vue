@@ -48,11 +48,5 @@
 <script>
 import 'vue-awesome/icons/sign-in';
 import 'vue-awesome/icons/user-plus';
-import Icon from 'vue-awesome/components/Icon';
 
-export default {
-  components: {
-    Icon,
-  },
-};
 </script>
