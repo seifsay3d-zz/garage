@@ -26,7 +26,7 @@
             <p class="control">
               <a class="button" >
                 <span class="icon">
-                  <i class="fa fa-twitter"></i>
+                  <icon name="sign-in"></icon>
                 </span>
                 <span>Login</span>
               </a>
@@ -34,7 +34,7 @@
             <p class="control">
               <a class="button is-primary">
                 <span class="icon">
-                  <i class="fa fa-download"></i>
+                  <icon name="user-plus"></icon>
                 </span>
                 <span>Sign Up</span>
               </a>
@@ -45,3 +45,14 @@
     </nav>
   </div>
 </template>
+<script>
+import 'vue-awesome/icons/sign-in';
+import 'vue-awesome/icons/user-plus';
+import Icon from 'vue-awesome/components/Icon';
+
+export default {
+  components: {
+    Icon,
+  },
+};
+</script>
