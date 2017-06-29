@@ -22,25 +22,16 @@
         <router-link class="nav-item" to="directory">Directory</router-link>
         <router-link class="nav-item" to="stolen-bikes">Stolen Bikes</router-link>
         <div class="nav-item">
-          <div class="field is-grouped">
-            <p class="control">
-              <a class="button" >
-                <span class="icon">
-                  <icon name="sign-in"></icon>
-                </span>
-                <span>Login</span>
-              </a>
-            </p>
-            <p class="control">
-              <a class="button is-primary">
-                <span class="icon">
-                  <icon name="user-plus"></icon>
-                </span>
-                <span>Sign Up</span>
-              </a>
-            </p>
+          <div class="field">
+            <login></login>
           </div>
         </div>
+        <div class="nav-item">
+          <div class="field">
+            <sign-up></sign-up>
+          </div>
+        </div>
+        
       </div>
     </nav>
   </div>
@@ -48,5 +39,13 @@
 <script>
 import 'vue-awesome/icons/sign-in';
 import 'vue-awesome/icons/user-plus';
+import Login from '@/Pages/Users/Login';
+import SignUp from '@/Pages/Users/SignUp';
 
+export default {
+  components: {
+    Login,
+    SignUp,
+  },
+};
 </script>
